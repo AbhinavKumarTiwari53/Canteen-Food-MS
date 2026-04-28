@@ -24,3 +24,5 @@ public class AdminLogin
 		return "AdminLogin [name=" + email + ", password=" + password + "]";
 	}	
 }
+
+// Completed AdminLogin.java
