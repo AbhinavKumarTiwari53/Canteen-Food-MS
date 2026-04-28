@@ -11,3 +11,4 @@ class FoodFrenzyApplicationTests {
 	}
 
 }
+// Completed Application.js
