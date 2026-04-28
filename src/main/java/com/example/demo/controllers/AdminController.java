@@ -37,6 +37,17 @@ public class AdminController {
 
 // Removed instance variables email and user to prevent data leakage in singleton controller
 
+	// @PostMapping("/adminLogin")
+	// @Operation(summary = "Admin login authentication", description = "Validates admin credentials and redirects to the services dashboard")
+	// public String getAllData(@ModelAttribute("adminLogin") AdminLogin login, Model model, jakarta.servlet.http.HttpSession session) {
+	// 	String email = login.getEmail();
+	// 	String password = login.getPassword();
+	// 	if (adminServices.validateAdminCredentials(email, password)) {
+	// 		session
+	// 		model.addAttribute("error", "Invalid email or password");
+	// 		return "Login";
+	// 	}
+	// }
 	@PostMapping("/adminLogin")
 	@Operation(summary = "Admin login authentication", description = "Validates admin credentials and redirects to the services dashboard")
 	public String getAllData(@ModelAttribute("adminLogin") AdminLogin login, Model model, jakarta.servlet.http.HttpSession session) {
