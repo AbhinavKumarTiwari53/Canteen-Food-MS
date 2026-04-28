@@ -1,3 +1,5 @@
+
+
 package com.example.demo.controllers;
 import java.util.List;
 
@@ -51,3 +53,27 @@ public class ProductController
 	}
 	
 }
+
+// 		this.productServices.addProduct(product);
+// 		return "redirect:/admin/services";
+// 	}
+
+// 	//	UpdateProduct
+// 	@GetMapping("/updatingProduct/{productId}")
+// 	@Operation(summary = "Update a product", description = "Modifies an existing food item's details")
+// 	public String updateProduct(@ModelAttribute Product product,@PathVariable("productId") int id)
+// 	{
+
+// 		this.productServices.updateproduct(product, id);
+// 		return "redirect:/admin/services";
+// 	}
+// 	//DeleteProduct
+// 	@GetMapping("/deleteProduct/{productId}")
+// 	@Operation(summary = "Delete a product", description = "Removes a food item from the menu by ID")
+// 	public String delete(@PathVariable("productId") int id)
+// 	{
+// 		this.productServices.deleteProduct(id);
+// 		return "redirect:/admin/services";
+// 	}
+	
+// }
