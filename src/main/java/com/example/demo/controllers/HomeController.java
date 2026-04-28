@@ -16,7 +16,15 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Controller
 @Tag(name = "Home Controller", description = "Public pages and navigation")
 public class HomeController 
-{
+// {
+// 	@Autowired
+// 	private ProductServices productServices;
+// 	@GetMapping(value = {"/home", "/"}
+// 	public String home()
+// 	{
+// 		return "Home";
+// 	}
+	{
 	@Autowired
 	private ProductServices productServices;
 	@GetMapping(value = {"/home", "/"})
@@ -25,7 +33,6 @@ public class HomeController
 	{
 		return "Home";
 	}
-
 	@GetMapping("/products")
 	@Operation(summary = "Browse Products", description = "Displays the public food menu and dish categories")
 	public String products( Model model)
